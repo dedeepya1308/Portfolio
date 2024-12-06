@@ -1,0 +1,94 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+header {
+    background: var(--header-bg);
+    color: var(--header-text);
+    padding: 10px 20px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+header a {
+    color: var(--header-text);
+    text-decoration: none;
+    margin: 0 15px;
+}
+header button {
+    background: none;
+    border: 1px solid var(--header-text);
+    color: var(--header-text);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+header button:hover {
+    background: var(--header-text);
+    color: var(--header-bg);
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background: var(--section-bg);
+    color: var(--section-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Projects */
+.project-gallery {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Light Theme Variables */
+body.light-theme {
+    --header-bg: #333;
+    --header-text: #fff;
+    --section-bg: #f9f9f9;
+    --section-text: #333;
+    --footer-bg: #333;
+    --footer-text: #fff;
+}
+
+/* Dark Theme Variables */
+body.dark-theme {
+    --header-bg: #22067c;
+    --header-text: #f5f5f5;
+    --section-bg: #04053e;
+    --section-text: #e0e0e0;
+    --footer-bg: #070765;
+    --footer-text: #f5f5f5;
+}
